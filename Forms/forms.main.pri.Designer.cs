@@ -28,219 +28,222 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.documentaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.irAlRepositorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtInversionInicial = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtFE = new System.Windows.Forms.TextBox();
-            this.panelFE = new System.Windows.Forms.Panel();
-            this.btnCrearFE = new System.Windows.Forms.Button();
-            this.datagvTabla = new System.Windows.Forms.DataGridView();
-            this.btnGuardarFE = new System.Windows.Forms.Button();
-            this.btnfPRI = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datagvTabla)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formPRI));
+            menuStrip1 = new MenuStrip();
+            documentaciónToolStripMenuItem = new ToolStripMenuItem();
+            irAlRepositorioToolStripMenuItem = new ToolStripMenuItem();
+            label1 = new Label();
+            label2 = new Label();
+            panel1 = new Panel();
+            label4 = new Label();
+            txtInversionInicial = new TextBox();
+            label5 = new Label();
+            txtFE = new TextBox();
+            panelFE = new Panel();
+            btnCrearFE = new Button();
+            datagvTabla = new DataGridView();
+            btnfPRI = new Button();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            pictureBox1 = new PictureBox();
+            menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)datagvTabla).BeginInit();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.documentaciónToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(491, 30);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { documentaciónToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(529, 30);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // documentaciónToolStripMenuItem
             // 
-            this.documentaciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.irAlRepositorioToolStripMenuItem});
-            this.documentaciónToolStripMenuItem.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.documentaciónToolStripMenuItem.Name = "documentaciónToolStripMenuItem";
-            this.documentaciónToolStripMenuItem.Size = new System.Drawing.Size(118, 26);
-            this.documentaciónToolStripMenuItem.Text = "Documentación";
+            documentaciónToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { irAlRepositorioToolStripMenuItem });
+            documentaciónToolStripMenuItem.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            documentaciónToolStripMenuItem.Name = "documentaciónToolStripMenuItem";
+            documentaciónToolStripMenuItem.Size = new Size(118, 26);
+            documentaciónToolStripMenuItem.Text = "Documentación";
             // 
             // irAlRepositorioToolStripMenuItem
             // 
-            this.irAlRepositorioToolStripMenuItem.Name = "irAlRepositorioToolStripMenuItem";
-            this.irAlRepositorioToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
-            this.irAlRepositorioToolStripMenuItem.Text = "Ir al repositorio";
+            irAlRepositorioToolStripMenuItem.Name = "irAlRepositorioToolStripMenuItem";
+            irAlRepositorioToolStripMenuItem.Size = new Size(180, 26);
+            irAlRepositorioToolStripMenuItem.Text = "Ir al repositorio";
+            irAlRepositorioToolStripMenuItem.Click += irAlRepositorioToolStripMenuItem_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(400, 34);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Periodo de Recuperación de la Inversión";
+            label1.AutoSize = true;
+            label1.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(12, 30);
+            label1.Name = "label1";
+            label1.Size = new Size(400, 34);
+            label1.TabIndex = 3;
+            label1.Text = "Periodo de Recuperación de la Inversión";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(394, 45);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Dentro de este programa se realizará el tiempo que tarda una empresa en \r\nrecuper" +
-    "ar el importe original invertido en un proyecto, cuando el flujo \r\nfijo neto es " +
-    "igual a cero.";
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 64);
+            label2.Name = "label2";
+            label2.Size = new Size(394, 30);
+            label2.TabIndex = 4;
+            label2.Text = "Dentro de este programa se realizará el tiempo que tarda una empresa en \r\nrecuperar el importe original invertido en un proyecto.\r\n";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel1.Location = new System.Drawing.Point(0, 117);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(542, 10);
-            this.panel1.TabIndex = 8;
+            panel1.BackColor = SystemColors.AppWorkspace;
+            panel1.ForeColor = SystemColors.ActiveBorder;
+            panel1.Location = new Point(0, 105);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(542, 2);
+            panel1.TabIndex = 8;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(6, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 22);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Inversión Inicial:";
+            label4.AutoSize = true;
+            label4.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(6, 22);
+            label4.Name = "label4";
+            label4.Size = new Size(105, 22);
+            label4.TabIndex = 10;
+            label4.Text = "Inversión Inicial:";
             // 
             // txtInversionInicial
             // 
-            this.txtInversionInicial.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtInversionInicial.Location = new System.Drawing.Point(117, 22);
-            this.txtInversionInicial.Name = "txtInversionInicial";
-            this.txtInversionInicial.Size = new System.Drawing.Size(64, 25);
-            this.txtInversionInicial.TabIndex = 11;
+            txtInversionInicial.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtInversionInicial.Location = new Point(117, 22);
+            txtInversionInicial.Name = "txtInversionInicial";
+            txtInversionInicial.Size = new Size(64, 25);
+            txtInversionInicial.TabIndex = 11;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(6, 61);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 22);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Flujos de efectivo:";
+            label5.AutoSize = true;
+            label5.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(6, 61);
+            label5.Name = "label5";
+            label5.Size = new Size(115, 22);
+            label5.TabIndex = 12;
+            label5.Text = "Flujos de efectivo:";
             // 
             // txtFE
             // 
-            this.txtFE.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtFE.Location = new System.Drawing.Point(127, 58);
-            this.txtFE.Name = "txtFE";
-            this.txtFE.Size = new System.Drawing.Size(64, 25);
-            this.txtFE.TabIndex = 13;
+            txtFE.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFE.Location = new Point(127, 58);
+            txtFE.Name = "txtFE";
+            txtFE.Size = new Size(64, 25);
+            txtFE.TabIndex = 13;
             // 
             // panelFE
             // 
-            this.panelFE.Location = new System.Drawing.Point(7, 24);
-            this.panelFE.Name = "panelFE";
-            this.panelFE.Size = new System.Drawing.Size(211, 121);
-            this.panelFE.TabIndex = 14;
+            panelFE.Location = new Point(7, 24);
+            panelFE.Name = "panelFE";
+            panelFE.Size = new Size(248, 121);
+            panelFE.TabIndex = 14;
             // 
             // btnCrearFE
             // 
-            this.btnCrearFE.Location = new System.Drawing.Point(15, 415);
-            this.btnCrearFE.Name = "btnCrearFE";
-            this.btnCrearFE.Size = new System.Drawing.Size(108, 23);
-            this.btnCrearFE.TabIndex = 15;
-            this.btnCrearFE.Text = "Crear FE";
-            this.btnCrearFE.UseVisualStyleBackColor = true;
-            this.btnCrearFE.Click += new System.EventHandler(this.btnCrearFE_Click);
+            btnCrearFE.Font = new Font("Poppins", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCrearFE.Location = new Point(291, 259);
+            btnCrearFE.Name = "btnCrearFE";
+            btnCrearFE.Size = new Size(225, 67);
+            btnCrearFE.TabIndex = 15;
+            btnCrearFE.Text = "Crear FE";
+            btnCrearFE.UseVisualStyleBackColor = true;
+            btnCrearFE.Click += btnCrearFE_Click;
             // 
             // datagvTabla
             // 
-            this.datagvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagvTabla.Location = new System.Drawing.Point(15, 290);
-            this.datagvTabla.Name = "datagvTabla";
-            this.datagvTabla.ReadOnly = true;
-            this.datagvTabla.RowTemplate.Height = 25;
-            this.datagvTabla.Size = new System.Drawing.Size(461, 120);
-            this.datagvTabla.TabIndex = 17;
-            // 
-            // btnGuardarFE
-            // 
-            this.btnGuardarFE.Location = new System.Drawing.Point(129, 416);
-            this.btnGuardarFE.Name = "btnGuardarFE";
-            this.btnGuardarFE.Size = new System.Drawing.Size(108, 23);
-            this.btnGuardarFE.TabIndex = 18;
-            this.btnGuardarFE.Text = "Guardar FE";
-            this.btnGuardarFE.UseVisualStyleBackColor = true;
-            this.btnGuardarFE.Click += new System.EventHandler(this.btnGuardarFE_Click_1);
+            datagvTabla.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            datagvTabla.Location = new Point(243, 121);
+            datagvTabla.Name = "datagvTabla";
+            datagvTabla.ReadOnly = true;
+            datagvTabla.RowTemplate.Height = 25;
+            datagvTabla.Size = new Size(273, 120);
+            datagvTabla.TabIndex = 17;
+            datagvTabla.CellContentClick += datagvTabla_CellContentClick;
             // 
             // btnfPRI
             // 
-            this.btnfPRI.Location = new System.Drawing.Point(251, 416);
-            this.btnfPRI.Name = "btnfPRI";
-            this.btnfPRI.Size = new System.Drawing.Size(108, 23);
-            this.btnfPRI.TabIndex = 19;
-            this.btnfPRI.Text = "Calcular P.R.I";
-            this.btnfPRI.UseVisualStyleBackColor = true;
-            this.btnfPRI.Click += new System.EventHandler(this.btnfPRI_Click);
+            btnfPRI.Font = new Font("Poppins", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnfPRI.Location = new Point(291, 332);
+            btnfPRI.Name = "btnfPRI";
+            btnfPRI.Size = new Size(225, 66);
+            btnfPRI.TabIndex = 19;
+            btnfPRI.Text = "Calcular P.R.I";
+            btnfPRI.UseVisualStyleBackColor = true;
+            btnfPRI.Click += btnfPRI_Click;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtInversionInicial);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtFE);
-            this.groupBox1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(15, 133);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(222, 101);
-            this.groupBox1.TabIndex = 20;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Indica los siguiente datos";
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(txtInversionInicial);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(txtFE);
+            groupBox1.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox1.Location = new Point(15, 121);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(222, 101);
+            groupBox1.TabIndex = 20;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Indica los siguiente datos";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.panelFE);
-            this.groupBox2.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(252, 133);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(224, 151);
-            this.groupBox2.TabIndex = 21;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Flujos de efectivo";
+            groupBox2.Controls.Add(panelFE);
+            groupBox2.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox2.Location = new Point(12, 247);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(273, 151);
+            groupBox2.TabIndex = 21;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Flujos de efectivo";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.descarga;
+            pictureBox1.Location = new Point(416, 36);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(103, 60);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 22;
+            pictureBox1.TabStop = false;
             // 
             // formPRI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 450);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnfPRI);
-            this.Controls.Add(this.btnGuardarFE);
-            this.Controls.Add(this.datagvTabla);
-            this.Controls.Add(this.btnCrearFE);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "formPRI";
-            this.Text = "Form1";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datagvTabla)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(529, 416);
+            Controls.Add(pictureBox1);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Controls.Add(btnfPRI);
+            Controls.Add(datagvTabla);
+            Controls.Add(btnCrearFE);
+            Controls.Add(panel1);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
+            Name = "formPRI";
+            Text = "A.M.E | Método PRI";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)datagvTabla).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -258,9 +261,9 @@
         private Panel panelFE;
         private Button btnCrearFE;
         private DataGridView datagvTabla;
-        private Button btnGuardarFE;
         private Button btnfPRI;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
+        private PictureBox pictureBox1;
     }
 }
