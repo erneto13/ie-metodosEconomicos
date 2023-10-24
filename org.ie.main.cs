@@ -19,10 +19,10 @@ namespace IE_MetodosEconomicos
             // Ocultar el formulario principal
             this.Hide();
 
-            // Crear la instancia del formulario de P.R.I
+            // Crear la instancia del formulario de PRI
             formPRI formularioPRI = new formPRI();
 
-            // Mostrar el formulario de P.R.I
+            // Mostrar el formulario de PRI
             formularioPRI.FormClosed += (s, args) => this.Show();
             formularioPRI.Show();
         }
@@ -47,10 +47,10 @@ namespace IE_MetodosEconomicos
             // Ocultar el formulario principal
             this.Hide();
 
-            // Crear la instancia del formulario de P.R.I
+            // Crear la instancia del formulario de VPN
             formVPN formularioVPN = new formVPN();
 
-            // Mostrar el formulario de P.R.I
+            // Mostrar el formulario de VPN
             formularioVPN.FormClosed += (s, args) => this.Show();
             formularioVPN.Show();
         }
@@ -60,10 +60,10 @@ namespace IE_MetodosEconomicos
             // Ocultar el formulario principal
             this.Hide();
 
-            // Crear la instancia del formulario de P.R.I
+            // Crear la instancia del formulario de VAE
             formVAE formularioVAE = new formVAE();
 
-            // Mostrar el formulario de P.R.I
+            // Mostrar el formulario de VAE
             formularioVAE.FormClosed += (s, args) => this.Show();
             formularioVAE.Show();
         }
@@ -73,10 +73,10 @@ namespace IE_MetodosEconomicos
             // Ocultar el formulario principal
             this.Hide();
 
-            // Crear la instancia del formulario de P.R.I
+            // Crear la instancia del formulario de TIR
             formTIR formulariuTIR = new formTIR();
 
-            // Mostrar el formulario de T.I.R
+            // Mostrar el formulario de TIR
             formulariuTIR.FormClosed += (s, args) => this.Show();
             formulariuTIR.Show();
 
