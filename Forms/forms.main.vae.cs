@@ -75,7 +75,7 @@ namespace IE_MetodosEconomicos.Forms
         {
             ProcessStartInfo psInfo = new ProcessStartInfo
             {
-                FileName = "https://github.com/erneto13",
+                FileName = "https://github.com/erneto13/ie-metodosEconomicos",
                 UseShellExecute = true
             };
             Process.Start(psInfo);
