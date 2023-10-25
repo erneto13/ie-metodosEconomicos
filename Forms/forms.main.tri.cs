@@ -32,11 +32,11 @@ namespace IE_MetodosEconomicos.Forms
                 panelFE.Controls.Clear();
                 // Ajustes al panel para el scroll y sea dinámico
                 panelFE.AutoScroll = true;
-                panelFE.AutoScrollMinSize = new Size(0, 100); // Ajusta el valor en función de tu diseño
+                panelFE.AutoScrollMinSize = new Size(0, 100); // Ajusta el valor en función del diseño
 
                 // Variables para que los FE Dinámicos y se vean bien
                 int separacion = 30; // Espacio vertical
-                int posicionInicial = 0; // Posición vertical inicial
+                int posicionInicial = 0; // Posición horizontal inicial
                 // Crear y agregar cuadros de texto para los flujos de efectivo
                 for (int i = 0; i < cantidadFlujos; i++)
                 {
@@ -51,11 +51,12 @@ namespace IE_MetodosEconomicos.Forms
                     txt.Left = 110;
                     txt.Height = 25;
 
+                    // Añadir al panel los n Labels y los n TextBox
                     panelFE.Controls.Add(lbl);
                     panelFE.Controls.Add(txt);
 
                     /*
-                     * Se ajusta la posición iniciar y la  
+                     * Se ajusta la posición inicial y la  
                      * separación para cada Label y TextBox de los FE
                     */
                     posicionInicial += separacion;
